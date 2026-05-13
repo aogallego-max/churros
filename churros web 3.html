@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sr. Churro | Sabor Tradicional</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Bangers&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --amarillo: #FFD700;
+            --negro: #1a1a1a;
+            --blanco: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        header {
+            background-color: var(--amarillo);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            font-family: 'Bangers', cursive;
+            font-size: 2rem;
+            color: var(--negro);
+            text-decoration: none;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('nombre.jfif');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-family: 'Bangers', cursive;
+            color: var(--amarillo);
+        }
+
+        .container {
+            padding: 50px 5%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .grid-productos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: var(--blanco);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            border: 2px solid #eee;
+        }
+
+        .card img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        .card-info { padding: 20px; }
+
+        .precio {
+            display: inline-block;
+            background: var(--amarillo);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: var(--negro);
+            color: var(--blanco);
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">SR. CHURRO</a>
+        <nav>
+            <a href="#menu" style="text-decoration:none; color:black; font-weight:bold;">MENÚ</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Sabor Tradicional</h1>
+        <p>Cartago, Valle del Cauca</p>
+    </section>
+
+    <div class="container" id="menu">
+        <div class="grid-productos">
+            
+            <div class="card">
+                <img src="image_6785.jfif" alt="Churro Clásico">
+                <div class="card-info">
+                    <span class="precio">$4.000</span>
+                    <h3>Churro Clásico</h3>
+                    <p>Azúcar con Canela. ¡Tradición en cada bocado!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image_1d7383.jfif" alt="Churro Relleno">
+                <div class="card-info">
+                    <span class="precio">$9.000</span>
+                    <h3>Churro Relleno</h3>
+                    <p>Chocolate, Arequipe o Mora. ¡Tú eliges el sabor!</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="image_1d6ba8.jpg" alt="Combo Parche">
+                <div class="card-info">
+                    <span class="precio">$23.000</span>
+                    <h3>Combo Parche</h3>
+                    <p>5 Paquetes de Churro + Gaseosa 1.5L.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer id="contacto">
+        <h2 style="color: var(--amarillo); font-family: 'Bangers';">CONTACTOS</h2>
+        <p style="margin: 10px 0;">📍 Carrera 4a No 2-23 - Cartago, Valle</p>
+        <p style="font-size: 1.2rem; font-weight: bold;">📞 Teléfono: 3182585597</p>
+        <a href="https://wa.me/573182585597" class="btn-whatsapp">Pedir por WhatsApp</a>
+        <p style="margin-top: 20px; font-size: 0.8rem; opacity: 0.7;">Síguenos: @SrchurroSaborTradicional</p>
+    </footer>
+
+</body>
+</html>
